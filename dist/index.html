@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase 9</title>
+</head>
+<body>
+  <h1>Getting Started with Firebase 9</h1>
+
+  <h2>Firebase Firestore</h2>
+  <h3>Add a book</h3>
+  <form class="add">
+    <label for="title">Title:</label> <br>
+    <input type="text" name="title" required><br>
+    <label for="author">Author:</label><br>
+    <input type="text" name="author" required><br><br>
+    
+    <button>Add a new book</button>
+  </form>
+
+  <br><br>
+
+  <h3>Delete a book</h3>
+  <form class="delete">
+    <label for="id">Document id:</label><br>
+    <input type="text" name="id" required><br><br>
+
+    <button>Delete a book</button>
+  </form>
+
+  <br><br>
+
+  <h3>Update a book</h3>
+  <form class="update">
+    <label for="id">Document id:</label><br>
+    <input type="text" name="id" required><br><br>
+
+    <button>update a book</button>
+  </form>
+
+  <br><br>
+
+  <h2>Firebase Auth</h2>
+  <h3>Sign up</h3>
+  
+  <form class="signup">
+    <label for="email">email:</label> <br>
+    <input type="email"name="email"><br>
+    <label for="password">password:</label><br>
+    <input type="password" name="password"><br><br>
+    <button>signup</button>
+  </form>
+
+  <br><br>
+
+  <h3>Login</h3>
+
+  <form class="login">
+    <label for="email">email:</label><br>
+    <input type="email" name="email"><br>
+    <label for="password">password:</label><br>
+    <input type="password" name="password"><br><br>
+    <button>login</button>
+  </form>
+
+  <br><br>
+
+  <h3>Logout</h3>
+  <button class="logout">logout</button>
+
+
+  <br><br>
+  
+  <h2>Unsubscribing</h2>
+  <button class="unsub">unsubscribe from db/auth changes</button>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
